@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Cowfinding – Die Spur der Kühe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- StoryMapJS CSS -->
+  <link href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    #storymap {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="storymap"></div>
+
+  <!-- StoryMapJS Library -->
+  <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+
+  <script>
+    var storymap = new VCO.StoryMap("storymap", "published.json");
+
+    window.onresize = function () {
+      storymap.updateDisplay();
+    };
+  </script>
+
+</body>
+</html>
