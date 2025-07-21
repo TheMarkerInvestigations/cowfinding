@@ -9,49 +9,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <!-- Lokales StoryMapJS CSS -->
-  <link rel="stylesheet" href="css/storymap.css">
+ <!-- <link rel="stylesheet" href="css/storymap.css"> -->
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Montserrat', sans-serif;
-    }
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-    #storymap {
-      width: 100%;
-      height: 100%;
-    }
+  #storymap {
+    width: 100%;
+    height: 100%;
+  }
 
-    /* Optional: Verbindungslinien zwischen Punkten ausblenden */
-    .leaflet-overlay-pane svg path:not(.leaflet-marker-icon) {
-      display: none !important;
-    }
-
-    /* Optional: StoryMapJS-Logo ausblenden */
-    .vco-logo {
-      display: none !important;
-    }
-
+  /* Panel-Hintergrund dunkler + leicht transparent */
   .vco-storymap .vco-panel {
-    background: rgba(10, 10, 10, 0.8) !important;
-    color: #ffffff !important;
+    background-color: rgba(10, 10, 10, 0.85) !important;
   }
 
+  /* Allgemeiner Text weiß */
+  .vco-storymap .vco-panel,
+  .vco-storymap .vco-panel p,
+  .vco-storymap .vco-panel li,
+  .vco-storymap .vco-panel span {
+    color: white !important;
+  }
+
+  /* Titel hervorheben */
+  .vco-storymap .vco-slide-title,
+  .vco-storymap .vco-panel h1,
   .vco-storymap .vco-panel h2,
-  .vco-storymap .vco-panel h3,
-  .vco-storymap .vco-panel h1 {
+  .vco-storymap .vco-panel h3 {
     color: #599C8F !important;
   }
 
-  .vco-storymap .vco-panel p {
-    color: #ffffff !important;
+  /* Optional: Pfeil-Icons invertieren */
+  .vco-slider-arrow {
+    filter: invert(100%);
   }
+</style>
 
-  .vco-storymap .vco-slide-title {
-    color: #599C8F !important;
-  }
 
 
     
