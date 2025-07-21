@@ -57,21 +57,34 @@
   <script>
     var storymap = new VCO.StoryMap("storymap", "published.json");
 
-  // Warte, bis die StoryMap vollständig geladen ist
-  window.onload = function () {
+  // Funktion zum Auslesen des Ziel-Slides aus der URL
+  function getSlideFromHash() {
     const hash = window.location.hash;
     if (hash && hash.startsWith("#slide-")) {
-      const slideNum = parseInt(hash.replace("#slide-", ""));
-      if (!isNaN(slideNum)) {
-        // Warte, bis die StoryMap wirklich initialisiert ist
-        setTimeout(function () {
-          if (typeof storymap !== 'undefined' && storymap.goToSlide) {
-            storymap.goToSlide(slideNum);
-          }
-        }, 500); // 500 ms Verzögerung – kann angepasst werden
-      }
+      const num = parseInt(hash.replace("#slide-", ""));
+      return isNaN(num) ? null : num;
     }
-  };
+    return null;
+  }
+
+  // Initialisiere StoryMap
+  var storymap = new VCO.StoryMap("storymap", "published.json");
+
+  // Sobald sie fertig geladen ist, rufe den Ziel-Slide auf
+  storymap.on("loaded", function () {
+    const target = getSlideFromHash();
+    if (target !== null) {
+      storymap.goToSlide(target);
+    }
+  });
+
+  // Optional: Live-Sprung beim Ändern des Hashes
+  window.addEventListener("hashchange", function () {
+    const target = getSlideFromHash();
+    if (target !== null && typeof storymap.goToSlide === "function") {
+      storymap.goToSlide(target);
+    }
+  });
     
     window.onresize = function () {
       storymap.updateDisplay();
