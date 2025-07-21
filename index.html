@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <title>Cowfinding – Die Spur der Kühe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <!-- StoryMapJS CSS -->
-  <link href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css" rel="stylesheet">
+  <!-- StoryMapJS Styles -->
+  <link rel="stylesheet" href="storymap-js/storymap.css">
 
   <style>
     html, body {
@@ -24,26 +24,9 @@
       height: 100%;
     }
 
-  /*Farben*/
-  body {
-    background-color: #ffffff;
-    color: #111111;
-  }
-
-  .storymap-slide .caption {
-    background-color: rgba(255, 255, 255, 0.95);
-    color: #222222;
-    border-top: 4px solid #0057b8; /* Marker-Blau-Ton */
-  }
-
-  .vco-nav-arrow {
-    color: #0057b8; /* Pfeil-Grafikfarbe */
-  }
-    
-
-    /* Verbindungslinien zwischen den Slides ausblenden */
-   .leaflet-overlay-pane path.leaflet-interactive {
-    display: none !important;
+    /* Linien zwischen Slides ausblenden */
+    .leaflet-overlay-pane path.leaflet-interactive {
+      display: none !important;
     }
   </style>
 </head>
@@ -51,10 +34,10 @@
 
   <div id="storymap"></div>
 
-  <!-- StoryMapJS Library -->
-  <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+  <!-- StoryMapJS -->
+  <script src="storymap-js/storymap-min.js"></script>
 
-   <script>
+  <script>
     // Funktion zum Lesen des Hashes
     function getSlideFromHash() {
       const hash = window.location.hash;
