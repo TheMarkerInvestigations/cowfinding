@@ -43,8 +43,23 @@
   <script src="storymap-js/storymap-min.js"></script>
 
   <script>
-    var storymap = new VCO.StoryMap("storymap", "published.json");
+  //  var storymap = new VCO.StoryMap("storymap", "published.json");
+    function getSlideParam() {
+  const params = new URLSearchParams(window.location.search);
+  const slide = parseInt(params.get("slide"));
+  return isNaN(slide) ? null : slide;
+}
 
+var storymap = new VCO.StoryMap("storymap", "published.json");
+
+storymap.on("loaded", function () {
+  const startSlide = getSlideParam();
+  if (startSlide !== null) {
+    storymap.goToSlide(startSlide);
+  }
+});
+
+    
     window.onresize = function () {
       storymap.updateDisplay();
     };
