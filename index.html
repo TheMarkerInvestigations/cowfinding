@@ -57,6 +57,22 @@
   <script>
     var storymap = new VCO.StoryMap("storymap", "published.json");
 
+  // Warte, bis die StoryMap vollständig geladen ist
+  window.onload = function () {
+    const hash = window.location.hash;
+    if (hash && hash.startsWith("#slide-")) {
+      const slideNum = parseInt(hash.replace("#slide-", ""));
+      if (!isNaN(slideNum)) {
+        // Warte, bis die StoryMap wirklich initialisiert ist
+        setTimeout(function () {
+          if (typeof storymap !== 'undefined' && storymap.goToSlide) {
+            storymap.goToSlide(slideNum);
+          }
+        }, 500); // 500 ms Verzögerung – kann angepasst werden
+      }
+    }
+  };
+    
     window.onresize = function () {
       storymap.updateDisplay();
     };
