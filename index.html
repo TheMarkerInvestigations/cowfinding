@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <title>Cowfinding – Die Spur der Kühe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <!-- StoryMap CSS -->
-  <link rel="stylesheet" href="css/storymap.css">
+  <!-- StoryMapJS CSS -->
+  <link href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css" rel="stylesheet">
 
   <style>
     html, body {
@@ -23,49 +23,21 @@
       width: 100%;
       height: 100%;
     }
-
-    /* Verbindungslinien (Pfadlinien) zwischen Slides sicher ausblenden */
-    .leaflet-overlay-pane svg path:not(.leaflet-marker-icon) {
-      display: none !important;
-    }
   </style>
 </head>
 <body>
 
   <div id="storymap"></div>
 
-  <!-- StoryMapJS -->
-  <script src="storymap-js/storymap-min.js"></script>
+  <!-- StoryMapJS Library -->
+  <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 
   <script>
-    // Funktion zum Lesen des Slide-Index aus der URL (z. B. #slide-2)
-    function getSlideFromHash() {
-      const hash = window.location.hash;
-      if (hash && hash.startsWith("#slide-")) {
-        const num = parseInt(hash.replace("#slide-", ""));
-        return isNaN(num) ? null : num;
-      }
-      return null;
-    }
-
-    // StoryMap initialisieren
     var storymap = new VCO.StoryMap("storymap", "published.json");
 
-    // Springe zu bestimmtem Slide, wenn URL-Hash vorhanden
-    storymap.on("loaded", function () {
-      const target = getSlideFromHash();
-      if (target !== null) {
-        storymap.goToSlide(target);
-      }
-    });
-
-    // Optional: Hashwechsel live beobachten (z. B. manuelles Eingeben)
-    window.addEventListener("hashchange", function () {
-      const target = getSlideFromHash();
-      if (target !== null && typeof storymap.goToSlide === "function") {
-        storymap.goToSlide(target);
-      }
-    });
+    window.onresize = function () {
+      storymap.updateDisplay();
+    };
   </script>
 
 </body>
