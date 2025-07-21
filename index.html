@@ -54,41 +54,35 @@
   <!-- StoryMapJS Library -->
   <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 
-  <script>
+   <script>
+    // Funktion zum Lesen des Hashes
+    function getSlideFromHash() {
+      const hash = window.location.hash;
+      if (hash && hash.startsWith("#slide-")) {
+        const num = parseInt(hash.replace("#slide-", ""));
+        return isNaN(num) ? null : num;
+      }
+      return null;
+    }
+
+    // Initialisiere StoryMap
     var storymap = new VCO.StoryMap("storymap", "published.json");
 
-  // Funktion zum Auslesen des Ziel-Slides aus der URL
-  function getSlideFromHash() {
-    const hash = window.location.hash;
-    if (hash && hash.startsWith("#slide-")) {
-      const num = parseInt(hash.replace("#slide-", ""));
-      return isNaN(num) ? null : num;
-    }
-    return null;
-  }
+    // Springe zum gewünschten Slide, sobald StoryMap geladen ist
+    storymap.on("loaded", function () {
+      const target = getSlideFromHash();
+      if (target !== null) {
+        storymap.goToSlide(target);
+      }
+    });
 
-  // Initialisiere StoryMap
-  var storymap = new VCO.StoryMap("storymap", "published.json");
-
-  // Sobald sie fertig geladen ist, rufe den Ziel-Slide auf
-  storymap.on("loaded", function () {
-    const target = getSlideFromHash();
-    if (target !== null) {
-      storymap.goToSlide(target);
-    }
-  });
-
-  // Optional: Live-Sprung beim Ändern des Hashes
-  window.addEventListener("hashchange", function () {
-    const target = getSlideFromHash();
-    if (target !== null && typeof storymap.goToSlide === "function") {
-      storymap.goToSlide(target);
-    }
-  });
-    
-    window.onresize = function () {
-      storymap.updateDisplay();
-    };
+    // Reagiere auch auf spätere Hash-Änderungen
+    window.addEventListener("hashchange", function () {
+      const target = getSlideFromHash();
+      if (target !== null && typeof storymap.goToSlide === "function") {
+        storymap.goToSlide(target);
+      }
+    });
   </script>
 
 </body>
