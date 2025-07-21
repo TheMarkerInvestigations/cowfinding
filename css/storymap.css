@@ -3057,3 +3057,14 @@
 
 
 /*# sourceMappingURL=storymap.css.map*/
+
+.vco-panel {
+  background-color: rgba(10, 10, 10, 0.85) !important;
+}
+.vco-panel-content, .vco-panel-content p {
+  color: #ffffff !important;
+}
+.vco-panel-content h2 {
+  color: #599C8F !important;
+}
+
