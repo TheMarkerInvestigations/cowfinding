@@ -450,9 +450,9 @@
 /* Icons
 ================================================== */
 @font-face {
-  font-family: 'vco-icons';
-  src: url(../css/icons/vco-icons.eot);
-  src: url(../css/icons/vco-icons.eot?#iefix) format('embedded-opentype'), url(../css/icons/vco-icons.ttf) format('truetype'), url(../css/icons/vco-icons.woff2) format('woff2'), url(../css/icons/vco-icons.woff) format('woff'), url(../css/icons/vco-icons.svg#vco-icons) format('svg');
+ font-family: "storymap";
+  src: url("fonts/storymap.woff") format("woff"),
+       url("fonts/storymap.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
