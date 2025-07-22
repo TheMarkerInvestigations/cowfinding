@@ -3058,6 +3058,8 @@
 
 /*# sourceMappingURL=storymap.css.map*/
 
+/*# sourceMappingURL=storymap.css.map*/
+
 .vco-panel {
   background-color: rgba(10, 10, 10, 0.85) !important;
 }
@@ -3068,3 +3070,7 @@
   color: #599C8F !important;
 }
 
+.highlight {
+  background-color: #729a8f;
+  color: white;
+}
