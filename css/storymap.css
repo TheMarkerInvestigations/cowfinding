@@ -305,7 +305,7 @@
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 17px;
-  text-shadow: -2px -1px 0 white, 2px -1px 0 white, -2px 1px 0 white, 2px 1px 0 white;
+  /*text-shadow: -2px -1px 0 white, 2px -1px 0 white, -2px 1px 0 white, 2px 1px 0 white;*/
 }
 .vco-storymap p a:hover,
 .vco-storymap p a:focus {
@@ -818,7 +818,7 @@
   text-transform: uppercase;
   margin-top: 7.5px;
   margin-bottom: 7.5px;
-  text-shadow: 1px 1px 1px #FFF;
+  /*text-shadow: 1px 1px 1px #FFF;*/
 }
 .vco-message .vco-message-container .vco-loading-icon,
 .vco-message-full .vco-message-container .vco-loading-icon {
@@ -1042,7 +1042,7 @@
 .vco-slide.vco-full-image-background,
 .vco-slide.vco-full-color-background {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  /*text-shadow: 1px 1px 1px #000 !important;*/
 }
 .vco-slide.vco-full-image-background p,
 .vco-slide.vco-full-color-background p,
@@ -1059,7 +1059,7 @@
 .vco-slide.vco-full-image-background h6,
 .vco-slide.vco-full-color-background h6 {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  /*text-shadow: 1px 1px 1px #000 !important;*/
 }
 .vco-slide.vco-full-image-background a,
 .vco-slide.vco-full-color-background a,
@@ -1074,7 +1074,7 @@
 .vco-slide.vco-full-image-background blockquote p,
 .vco-slide.vco-full-color-background blockquote p {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  /*text-shadow: 1px 1px 1px #000 !important;*/
   color: #ffffff;
 }
 .vco-slide.vco-full-image-background .vco-caption,
@@ -1082,7 +1082,7 @@
 .vco-slide.vco-full-image-background .vco-credit,
 .vco-slide.vco-full-color-background .vco-credit {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  /*text-shadow: 1px 1px 1px #000 !important;*/
 }
 .vco-slide.vco-full-image-background .vco-media-twitter blockquote,
 .vco-slide.vco-full-color-background .vco-media-twitter blockquote,
