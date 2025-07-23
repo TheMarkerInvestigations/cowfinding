@@ -21,7 +21,7 @@
         },
         "text": {
           "headline": "<span class='highlight'>COWFINDING: WOHIN VERSCHWINDEN ÖSTERREICHS KÜHE?</span>",
-          "text": "<div style='color: white;'><div style='color: #ffffff !important;'><br></div><div>Jedes Jahr werden zehntausende weibliche Rinder aus Österreich in Länder wie Algerien transportiert.</div>\n<div>Diese Tiere tragen ein ungeborenes Kalb in sich und sollen angeblich zum Aufbau einer Rinderpopulation dienen.</div>\n<div><br>Doch was vor Ort wirklich mit ihnen geschieht, bleibt im Dunkeln.</div>\n\n<div><br><strong><span style=\\\"background-color: #6fb2a5; color: white; padding: 2px;\\\">Höfe, Viehmärkte und Schlachthäuser</span></strong></div>\n<div><br>Wir suchen gezielt auf Viehmärkten, Bauernhöfen und in Schlachthöfen nach den Kühen und ihren Kälbern.</div>\n<div>Wir sprechen mit Menschen vor Ort, weil wir in Österreich keine Antworten bekommen.</div>\n<div>Damit sorgen wir für Transparenz und entlarven die Machenschaften der Profiteure.<br><br></div><p>&nbsp;</p></div>"
+          "text": "<div style='color: white;'><div style='color: #ffffff !important;'><br></div><div>Jedes Jahr werden zehntausende weibliche Rinder aus Österreich in Länder wie Algerien transportiert.</div>\n<div>Diese Tiere tragen ein ungeborenes Kalb in sich und sollen angeblich zum Aufbau einer Rinderpopulation dienen. Doch was vor Ort wirklich mit ihnen geschieht, bleibt im Dunkeln.<div><br><strong><span style'background-color: #6fb2a5; color: white; padding: 2px;'>Höfe, Viehmärkte und Schlachthäuser</span></strong></div>\n<div><br>Wir suchen gezielt auf Viehmärkten, Bauernhöfen und in Schlachthöfen nach den Kühen und ihren Kälbern.</div>\n<div>Wir sprechen mit Menschen vor Ort, weil wir in Österreich keine Antworten bekommen.</div>\n<div>Damit sorgen wir für Transparenz und entlarven die Machenschaften der Profiteure.<br><br></div><p>&nbsp;</p></div>"
         },
         "type": "overview",
         "background": {
@@ -42,7 +42,7 @@
           "line": true,
           "lon": 6.262331,
           "use_custom_marker": true,
-          "zoom": 4
+          "zoom": 8
         },
         "media": {
           "caption": "",
@@ -66,7 +66,7 @@
           "line": true,
           "lon": 2.219506,
           "use_custom_marker": true,
-          "zoom": 12
+          "zoom": 8
         },
         "media": {
           "caption": "",
@@ -91,7 +91,7 @@
           "line": true,
           "lon": 6.176726,
           "use_custom_marker": true,
-          "zoom": 4
+          "zoom": 8
         },
         "media": {
           "caption": "",
