@@ -1089,21 +1089,21 @@
 .vco-slide.vco-full-image-background .vco-media-blockquote blockquote,
 .vco-slide.vco-full-color-background .vco-media-blockquote blockquote {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  text-shadow: none;
 }
 .vco-slide.vco-full-image-background .vco-media-twitter blockquote p,
 .vco-slide.vco-full-color-background .vco-media-twitter blockquote p,
 .vco-slide.vco-full-image-background .vco-media-blockquote blockquote p,
 .vco-slide.vco-full-color-background .vco-media-blockquote blockquote p {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  text-shadow: none;
 }
 .vco-slide.vco-full-image-background .vcard a,
 .vco-slide.vco-full-color-background .vcard a,
 .vco-slide.vco-full-image-background .vcard .nickname,
 .vco-slide.vco-full-color-background .vcard .nickname {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  text-shadow: none;
 }
 /* Landscape
 ================================================== */
@@ -1116,7 +1116,7 @@
   -o-background-size: cover;
   background-size: cover;
   background-position: center 25%;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: none;
 }
 .vco-slide.vco-full-image-background p,
 .vco-slide.vco-full-image-background h1,
@@ -1125,19 +1125,19 @@
 .vco-slide.vco-full-image-background h4,
 .vco-slide.vco-full-image-background h5,
 .vco-slide.vco-full-image-background h6 {
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: none;
 }
 .vco-slide.vco-full-image-background .vco-caption,
 .vco-slide.vco-full-image-background .vco-credit {
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: none;
 }
 .vco-slide.vco-full-image-background .vco-media-twitter blockquote,
 .vco-slide.vco-full-image-background .vco-media-blockquote blockquote {
-  text-shadow: 1px 1px 2px #000 !important;
+  text-shadow: none;
 }
 .vco-slide.vco-full-image-background .vco-media-twitter blockquote p,
 .vco-slide.vco-full-image-background .vco-media-blockquote blockquote p {
-  text-shadow: 1px 1px 2px #000 !important;
+  text-shadow: none;
 }
 /* Color Background 
 ================================================== */
@@ -1275,7 +1275,7 @@
 .vco-slidenav-previous .vco-slidenav-content-container .vco-slidenav-title,
 .vco-slidenav-next .vco-slidenav-content-container .vco-slidenav-description,
 .vco-slidenav-previous .vco-slidenav-content-container .vco-slidenav-description {
-  text-shadow: 1px 1px 1px #FFF;
+  text-shadow: none;
   color: #FFF;
 }
 .vco-slidenav-next .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-icon,
@@ -1285,7 +1285,7 @@
 .vco-slidenav-next .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-description,
 .vco-slidenav-previous .vco-slidenav-content-container.vco-slidenav-inverted .vco-slidenav-description {
   color: #333;
-  text-shadow: 1px 1px 1px #333;
+  text-shadow: none;
 }
 .vco-slidenav-next .vco-slidenav-icon,
 .vco-slidenav-previous .vco-slidenav-icon {
@@ -1691,7 +1691,7 @@
 .vco-slide.vco-full-image-background .vcard a,
 .vco-slide.vco-full-color-background .vcard a {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  text-shadow: none;
   color: #ffffff;
 }
 /* Credit
@@ -1806,7 +1806,7 @@
 .vco-full-image-background .vco-text p,
 .vco-full-color-background .vco-text p {
   color: #ababab !important;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: none;
 }
 .vco-full-image-background .vco-text .vco-headline-date,
 .vco-full-color-background .vco-text .vco-headline-date,
@@ -2000,7 +2000,7 @@
 .vco-slide.vco-full-image-background .vco-media .vco-media-wikipedia h4 a,
 .vco-slide.vco-full-color-background .vco-media .vco-media-wikipedia h4 a {
   color: #FFF !important;
-  text-shadow: 1px 1px 1px #000 !important;
+  text-shadow: none;
 }
 .vco-mobile.vco-skinny .vco-media .vco-media-wikipedia {
   margin-left: 10px;
@@ -2533,7 +2533,7 @@
 .vco-map .leaflet-container .leaflet-control-attribution .vco-knightlab-brand,
 .vco-map .leaflet-container .leaflet-control-attribution a.vco-knightlab-brand {
   margin-left: 5px;
-  text-shadow: 0px 0px 1px #FFF, 0px 0px 1px #FFF, 0px 0px 5px #FFF;
+  text-shadow: none;
   font-size: 14px;
   font-weight: bold;
 }
