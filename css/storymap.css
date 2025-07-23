@@ -3074,3 +3074,10 @@
   background-color: #729a8f;
   color: white;
 }
+
+.vco-storymap .vco-call-to-action .vco-button {
+  background-color: #f42566 !important;
+  border-color: #f42566 !important;
+  color: white !important; /* Falls du weißen Text willst */
+}
+
