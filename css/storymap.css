@@ -276,8 +276,8 @@
   line-height: 15px;
 }
 .vco-storymap h2.vco-headline-title {
-  font-size: 46px;
-  line-height: 46px;
+  font-size: 24px;
+  line-height: 24px;
 }
 .vco-storymap h2.vco-headline-title small {
   display: block;
@@ -334,7 +334,7 @@
 }
 .vco-storymap a {
   text-decoration: none;
-  color: #c34528;
+  color: #f42566;
 }
 .vco-storymap a:hover {
   text-decoration: underline;
@@ -751,7 +751,7 @@
   color: #737373;
 }
 .vco-mobile .vco-menubar-button:active {
-  background: #c34528;
+  background: #f42566;
   color: #FFF;
 }
 @keyframes invertToBlack {
@@ -929,7 +929,7 @@
 }
 .vco-slide .vco-slide-calltoaction .vco-slide-calltoaction-button-text {
   display: inline-block;
-  background-color: #c34528;
+  background-color: #f42566;
   color: #FFF;
   padding: 10px 15px 10px 15px;
   border-radius: 7px;
@@ -2801,7 +2801,7 @@
 }
 .vco-map .vco-mapmarker-image-icon-active {
   opacity: 1;
-  border: 4px solid #c34528;
+  border: 4px solid #f42566;
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   filter: grayscale(0);
