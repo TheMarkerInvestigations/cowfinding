@@ -948,7 +948,7 @@
   z-index: -1;
   overflow: hidden;
   display: none;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=100);
   -khtml-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
