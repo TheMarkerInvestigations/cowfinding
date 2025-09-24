@@ -3081,18 +3081,14 @@
   color: white !important; /* Falls du weißen Text willst */
 }
 
-/* PATCH: erzwinge den originalen halbtransparenten Verlauf */
-.vco-layout-landscape .vco-storyslider .vco-slider-background {
-  margin-left: -20% !important;
-  width: 120% !important;
-  overflow: hidden !important;
 
+.vco-layout-landscape .vco-storyslider .vco-slider-background {
+  margin-left: 0 !important;   /* nicht nach links rausschieben */
+  width: 100% !important;      /* normale Breite */
   background-image: linear-gradient(
     to right,
     rgba(0,0,0,0.4) 0%,
     rgba(0,0,0,0.8) 15%
   ) !important;
-  background-repeat: repeat-x !important;
+  background-repeat: no-repeat !important;
 }
-
-
